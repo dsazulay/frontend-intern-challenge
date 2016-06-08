@@ -3,11 +3,15 @@
     <head>
         <meta charset="utf-8">
         <script type="text/javascript" src="encurtador.js"></script>
+        <script type="text/javascript" src="parserjson.js"></script>
         <title></title>
     </head>
     <body>
-        <div class="cabecalho"></div>
+        <div class="cabecalho">
+            <img src="../Assets/logo-chaordic.png" alt="logo-chaordic" />
+        </div>
         <div class="conteudo-principal">
+            <img src="../Assets/background-home.jpg" alt="" />
             <div class="encurtador">
                 <h2>Encurte seus links.</h2>
                 <p>
@@ -19,9 +23,14 @@
                 <input type="button" id="encurtar" value="Encurtar" onclick="encurtar()">
                 <input type="button" id="copiar" value="Copiar" onclick="copiar()" style="display: none">
             </div>
-            <div class="top5-links"></div>
+            <div class="top5-links">
+                <ul id="top5-list"></ul>
+            </div>
             <div class="hits"></div>
         </div>
-        <div class="rodape"></div>
+        <div class="rodape">
+            <a href="https://twitter.com/chaordic"><img src="../Assets/icon-twitter.png" alt="twitter" /></a>
+            <a href="https://www.facebook.com/chaordic.com.br"><img src="../Assets/icon-facebook.png" alt="facebook" /></a>
+        </div>
     </body>
 </html>
