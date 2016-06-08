@@ -1,0 +1,18 @@
+body {
+  font: Roboto, serif;
+  color: #AA1423; }
+
+.encurtador {
+  color: white;
+  background-image: url("../../Assets/background-home.jpg"); }
+
+li {
+  list-style-type: none; }
+
+a {
+  color: #AA1423; }
+
+.texto-apoio {
+  color: #777; }
+
+/*# sourceMappingURL=style.css.map */

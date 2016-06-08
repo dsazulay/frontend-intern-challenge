@@ -18,6 +18,7 @@ carregaJSON(function(data) {
         aNode.href = jsonObj[i].shortUrl;
 
         var spanNode = document.createElement('span');
+        spanNode.className = 'texto-apoio';
         spanNode.appendChild(document.createTextNode(jsonObj[i].hits));
 
         var liNode = document.createElement('li');
