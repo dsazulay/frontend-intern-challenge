@@ -1,7 +1,8 @@
 body {
-  font: Roboto, serif; }
+  font-family: "Roboto", sans-serif; }
 
 .titulo {
+  font-family: "Roboto Slab", serif;
   color: #AA1423;
   font-size: 30pt; }
 
@@ -37,6 +38,8 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
+  .conteudo-encurtador .titulo {
+    color: white; }
 
 .top5-links {
   height: 400px;
@@ -48,7 +51,8 @@ body {
   .top5-links p {
     text-align: center; }
   .top5-links a {
-    color: #AA1423; }
+    color: #AA1423;
+    font-weight: bold; }
 
 .top5-linha {
   border-bottom: 1px solid #EEE; }

@@ -1,13 +1,14 @@
 $cor-texto-apoio:  #777
 $cor-background:   #EEE
 $cor-vermelho-chd: #AA1423
-$fonte-roboto:     Roboto, serif
-$fonte-slab:       Roboto Slab, serif
+$fonte-roboto:     'Roboto', sans-serif
+$fonte-slab:       'Roboto Slab', serif
 
 body
-  font: $fonte-roboto
+  font-family: $fonte-roboto
 
 .titulo
+  font-family: $fonte-slab
   color: $cor-vermelho-chd
   font-size: 30pt
 
@@ -44,6 +45,8 @@ body
   position: relative
   top: 50%
   transform: translateY(-50%)
+  .titulo
+    color: white
 
 .top5-links
   height: 400px
@@ -56,6 +59,7 @@ body
     text-align: center
   a
     color: $cor-vermelho-chd
+    font-weight: bold
 
 .top5-linha
   border-bottom: 1px solid $cor-background
