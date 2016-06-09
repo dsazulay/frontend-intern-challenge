@@ -1,35 +1,68 @@
 body {
-  font: Roboto, serif;
-  color: #AA1423; }
+  font: Roboto, serif; }
 
-.encurtador {
-  color: white;
-  background-image: url("../../Assets/background-home.jpg"); }
-
-li {
-  list-style-type: none; }
-
-a {
-  color: #AA1423; }
+.titulo {
+  color: #AA1423;
+  font-size: 30pt; }
 
 .texto-apoio {
   color: #777; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid white;
+  margin-left: auto;
+  margin-right: auto; }
 
 .cabecalho img {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
+.encurtador {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 650px;
+  background-image: url("../../Assets/background-home.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.conteudo-encurtador {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
 .top5-links {
+  height: 400px;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto; }
   .top5-links span {
     float: right; }
-  .top5-links h2 {
+  .top5-links p {
     text-align: center; }
+  .top5-links a {
+    color: #AA1423; }
 
-.encurtador, .hits {
-  text-align: center; }
+.top5-linha {
+  border-bottom: 1px solid #EEE; }
+
+.hits {
+  height: 300px;
+  text-align: center;
+  background-color: #EEE; }
+  .hits .numero-hits {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid #DDD;
+    border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */

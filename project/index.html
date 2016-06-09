@@ -13,22 +13,25 @@
         </div>
         <div class="conteudo-principal">
             <div class="encurtador">
-                <h2>Encurte seus links.</h2>
-                <p>
-                    Links são longos. Encurte os links que você deseja compartilhar, e
-                    acompanhe enquanto eles viajam através da internet.
-                </p>
-                <input type="text" id="link" placeholder="Cole seu link aqui">
-                <input type="button" id="cancelar" value="Cancelar" onclick="cancelar()" style="display: none">
-                <input type="button" id="encurtar" value="Encurtar" onclick="encurtar()">
-                <input type="button" id="copiar" value="Copiar" onclick="copiar()" style="display: none">
+                <div class="conteudo-encurtador">
+                    <h2>Encurte seus links.</h2>
+                    <p>
+                        Links são longos. Encurte os links que você deseja compartilhar, e
+                        acompanhe enquanto eles viajam através da internet.
+                    </p>
+                    <input type="text" id="link" placeholder="Cole seu link aqui">
+                    <input type="button" id="cancelar" value="Cancelar" onclick="cancelar()" style="display: none">
+                    <input type="button" id="encurtar" value="Encurtar" onclick="encurtar()">
+                    <input type="button" id="copiar" value="Copiar" onclick="copiar()" style="display: none">
+                </div>
             </div>
-            <div id="top5-list" class="top5-links">
-                <h2>TOP 5</h2>
+            <div id="top5-lista" class="top5-links">
+                <p class="titulo">TOP 5</p>
             </div>
             <div class="hits">
-                <h2>HITS</h2>
-                <div class="numero-hits">35.713.571</div>
+                <div class="arrow-down"></div>
+                <p class="titulo">HITS</p>
+                <div class="numero-hits titulo">35.713.571</div>
                 <p class="texto-apoio">Cliques em links</p>
             </div>
         </div>

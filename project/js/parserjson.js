@@ -24,7 +24,8 @@ carregaJSON(function(data) {
         var divNode = document.createElement('div');
         divNode.appendChild(aNode);
         divNode.appendChild(spanNode);
+        divNode.className = 'top5-linha'
 
-        document.getElementById('top5-list').appendChild(divNode);
+        document.getElementById('top5-lista').appendChild(divNode);
     }
 });
