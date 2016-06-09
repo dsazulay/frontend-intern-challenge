@@ -21,10 +21,10 @@ carregaJSON(function(data) {
         spanNode.className = 'texto-apoio';
         spanNode.appendChild(document.createTextNode(jsonObj[i].hits));
 
-        var liNode = document.createElement('li');
-        liNode.appendChild(aNode);
-        liNode.appendChild(spanNode);
+        var divNode = document.createElement('div');
+        divNode.appendChild(aNode);
+        divNode.appendChild(spanNode);
 
-        document.getElementById('top5-list').appendChild(liNode);
+        document.getElementById('top5-list').appendChild(divNode);
     }
 });
