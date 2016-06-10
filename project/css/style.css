@@ -51,13 +51,18 @@ body {
   .top5-links span {
     float: right; }
   .top5-links p {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
   .top5-links a {
     color: #AA1423;
-    font-weight: bold; }
-
-.top5-linha {
-  border-bottom: 1px solid #EEE; }
+    font-weight: bold;
+    text-decoration: none; }
+  .top5-links .top5-linha {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #EEE; }
+  .top5-links div:last-child {
+    border-bottom: none; }
 
 .hits {
   height: 300px;
