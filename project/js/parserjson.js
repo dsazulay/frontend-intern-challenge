@@ -1,7 +1,7 @@
 function carregaJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
-    xobj.open('GET', 'https://raw.githubusercontent.com/chaordic/frontend-intern-challenge/master/Assets/urls.json', true);
+    xobj.open('GET', '../Assets/urls.json', true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState === 4) {
             callback(xobj.responseText);
@@ -11,15 +11,18 @@ function carregaJSON(callback) {
 }
 
 carregaJSON(function(data) {
-    var jsonObj = JSON.parse(data);
+    var json = JSON.parse(data);
+    json = json.sort(function(a, b) {
+        return b.hits - a.hits;
+    });
     for (var i = 0; i < 5; i++) {
         var aNode = document.createElement('a');
-        aNode.appendChild(document.createTextNode(jsonObj[i].shortUrl));
-        aNode.href = jsonObj[i].shortUrl;
+        aNode.appendChild(document.createTextNode(json[i].shortUrl));
+        aNode.href = json[i].shortUrl;
 
         var spanNode = document.createElement('span');
         spanNode.className = 'texto-apoio';
-        spanNode.appendChild(document.createTextNode(jsonObj[i].hits));
+        spanNode.appendChild(document.createTextNode(json[i].hits));
 
         var divNode = document.createElement('div');
         divNode.appendChild(aNode);
