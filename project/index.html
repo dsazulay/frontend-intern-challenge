@@ -5,6 +5,7 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css" media="screen"charset="utf-8">
+        <script src="node_modules/clipboard/dist/clipboard.min.js"></script>
         <script type="text/javascript" src="js/encurtador.js"></script>
         <script type="text/javascript" src="js/parserjson.js"></script>
         <title></title>
@@ -24,7 +25,7 @@
                     <input type="text" id="link" placeholder="Cole seu link aqui">
                     <input type="button" id="cancelar" value="x" onclick="cancelar()" style="display: none">
                     <input type="button" id="encurtar" value="ENCURTAR" onclick="encurtar()">
-                    <input type="button" id="copiar" value="COPIAR" onclick="copiar()" style="display: none">
+                    <input type="button" id="copiar" value="COPIAR" data-clipboard-target="#link" style="display: none">
                 </div>
             </div>
             <div id="top5-lista" class="top5-links">

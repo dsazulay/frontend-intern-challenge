@@ -1,3 +1,5 @@
+var clipboard
+
 function encurtar() {
     var link = document.getElementById('link');
     link.value = 'http://chr.dc/xyzxyz';
@@ -11,6 +13,8 @@ function encurtar() {
 
     var botaoCopiar = document.getElementById('copiar');
     botaoCopiar.style.display = 'inline';
+
+    clipboard = new Clipboard('#copiar');
 }
 
 function cancelar() {
@@ -24,9 +28,7 @@ function cancelar() {
     var botaoCancelar = document.getElementById('cancelar');
     botaoCancelar.style.display = 'none';
 
+    clipboard.destroy();
     var botaoCopiar = document.getElementById('copiar');
     botaoCopiar.style.display = 'none';
-}
-
-function copiar() {
 }
