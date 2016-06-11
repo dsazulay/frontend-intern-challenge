@@ -1,7 +1,12 @@
 var clipboard
 var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+var cliquesTotais = 35713517
 
 function encurtar() {
+    cliquesTotais += 1;
+    var hits = document.getElementById('numero-hits');
+    hits.innerHTML = cliquesTotais.toFixed().replace(/(\d)(?=(\d{3})+$)/g, '$1.');
+
     var link = document.getElementById('link');
     link.value = 'http://chr.dc/xyzxyz';
     link.style.color = 'white';
