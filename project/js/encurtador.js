@@ -1,6 +1,7 @@
 function encurtar() {
     var link = document.getElementById('link');
     link.value = 'http://chr.dc/xyzxyz';
+    link.style.color = 'white';
 
     var botaoEncurtar = document.getElementById('encurtar');
     botaoEncurtar.style.display = 'none';
@@ -15,6 +16,7 @@ function encurtar() {
 function cancelar() {
     var link = document.getElementById('link');
     link.value = '';
+    link.style.color = '#FD6F29';
 
     var botaoEncurtar = document.getElementById('encurtar');
     botaoEncurtar.style.display = 'inline';

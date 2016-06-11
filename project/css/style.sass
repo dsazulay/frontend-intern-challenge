@@ -1,11 +1,13 @@
 $cor-texto-apoio:  #777
 $cor-background:   #EEE
 $cor-vermelho-chd: #AA1423
+$cor-laranja:      #FD6F29
 $fonte-roboto:     'Roboto', sans-serif
 $fonte-slab:       'Roboto Slab', serif
 
 body
   font-family: $fonte-roboto
+  font-size: 12pt
 
 .titulo
   font-family: $fonte-slab
@@ -24,13 +26,12 @@ body
   margin-left: auto
   margin-right: auto
 
-.cabecalho
-  img
-    display: block
-    margin-left: auto
-    margin-right: auto
-    margin-top: 15px
-    margin-bottom: -30px
+.cabecalho img
+  display: block
+  margin-left: auto
+  margin-right: auto
+  margin-top: 15px
+  margin-bottom: -30px
 
 .encurtador
   max-width: 1400px
@@ -39,16 +40,60 @@ body
   height: 650px
   background-image: url('../../Assets/background-home.jpg')
   background-repeat: no-repeat
-  background-size: contain
+  background-size: cover
 
 .conteudo-encurtador
+  font-size: 13pt
   text-align: center
   color: white
+  max-width: 660px
+  margin-left: auto
+  margin-right: auto
   position: relative
   top: 50%
   transform: translateY(-50%)
+
   .titulo
     color: white
+    margin-bottom: 6px
+  #descricao
+    margin-left: 15px
+    margin-right: 15px
+    margin-bottom: 66px
+
+  input
+    font-size: 13pt
+    color: $cor-laranja
+
+  #link
+    width: 440px
+    margin-bottom: 10px
+    border: none
+    border-bottom: 2px solid $cor-laranja
+    background-color: transparent
+    padding: 8px 2px
+
+  #encurtar, #copiar
+    color: white
+    background-color: $cor-laranja
+    border: none
+    padding: 10px 15px
+    width: 120px
+
+  #cancelar
+    color: white
+    background-color: transparent
+    border: none
+    margin-left: -27px
+
+::-webkit-input-placeholder
+  color: $cor-laranja
+\:-moz-placeholder
+  color: $cor-laranja
+::-moz-placeholder
+  color: $cor-laranja
+\:-ms-input-placeholder
+  color: $cor-laranja
 
 .top5-links
   height: 400px

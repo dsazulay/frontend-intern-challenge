@@ -1,5 +1,6 @@
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt; }
 
 .titulo {
   font-family: "Roboto Slab", serif;
@@ -32,16 +33,58 @@ body {
   height: 650px;
   background-image: url("../../Assets/background-home.jpg");
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: cover; }
 
 .conteudo-encurtador {
+  font-size: 13pt;
   text-align: center;
   color: white;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
   .conteudo-encurtador .titulo {
-    color: white; }
+    color: white;
+    margin-bottom: 6px; }
+  .conteudo-encurtador #descricao {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 66px; }
+  .conteudo-encurtador input {
+    font-size: 13pt;
+    color: #FD6F29; }
+  .conteudo-encurtador #link {
+    width: 440px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #FD6F29;
+    background-color: transparent;
+    padding: 8px 2px; }
+  .conteudo-encurtador #encurtar, .conteudo-encurtador #copiar {
+    color: white;
+    background-color: #FD6F29;
+    border: none;
+    padding: 10px 15px;
+    width: 120px; }
+  .conteudo-encurtador #cancelar {
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-left: -27px; }
+
+::-webkit-input-placeholder {
+  color: #FD6F29; }
+
+:-moz-placeholder {
+  color: #FD6F29; }
+
+::-moz-placeholder {
+  color: #FD6F29; }
+
+:-ms-input-placeholder {
+  color: #FD6F29; }
 
 .top5-links {
   height: 400px;
