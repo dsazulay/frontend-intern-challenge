@@ -1,4 +1,5 @@
 var clipboard
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
 
 function encurtar() {
     var link = document.getElementById('link');
@@ -13,6 +14,9 @@ function encurtar() {
 
     var botaoCopiar = document.getElementById('copiar');
     botaoCopiar.style.display = 'inline';
+    if (isSafari) {
+        botaoCopiar.value = 'SELECIONAR';
+    }
 
     clipboard = new Clipboard('#copiar');
 }

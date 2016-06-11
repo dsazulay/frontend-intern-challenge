@@ -56,7 +56,7 @@ body {
     font-size: 13pt;
     color: #FD6F29; }
   .conteudo-encurtador #link {
-    width: 440px;
+    width: 430px;
     margin-bottom: 10px;
     border: none;
     border-bottom: 2px solid #FD6F29;
@@ -66,8 +66,8 @@ body {
     color: white;
     background-color: #FD6F29;
     border: none;
-    padding: 10px 15px;
-    width: 120px; }
+    padding: 10px 8px;
+    width: 130px; }
   .conteudo-encurtador #cancelar {
     color: white;
     background-color: transparent;
